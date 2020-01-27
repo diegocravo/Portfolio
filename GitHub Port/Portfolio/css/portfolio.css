@@ -1,0 +1,200 @@
+body {
+  font-family: 'Alata', sans-serif;
+}
+
+.container {
+  width: 940px;
+  margin: auto;
+
+}
+/* ---------HEADER-------------------- */
+header {
+  background-color: #BE3144;
+  position: sticky;
+  top: 0;
+}
+
+.container-nav {
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-link {
+  float: right;
+  padding: 20px;
+}
+
+.header-link a{
+  padding: 20px;
+  font-size: 22px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #F0F0F0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header-link a:hover {
+  background-color: #45567D;
+}
+
+/* ----------INTRO DIV----------------------- */
+.intro {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(62deg, #3A3C3F, #19181A);
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-content h1{
+  line-height: 50px;
+  font-size: 40px;
+  color: #F0F0F0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro-content p {
+  font-weight: 400;
+  font-size: 22px;
+  color: #BE3144;
+  font-style: italic;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* ----------PROJECTS DIV--------------------- */
+.projects {
+  background-color: #45567D;
+  padding-bottom: 40px;:
+}
+
+.project-desc {
+  text-align: center;
+  padding: 30px;
+}
+
+.project-desc h2 {
+  color: #F0F0F0;
+  padding: 10px;
+  display: inline-block;
+  border-bottom: 3px solid #F0F0F0;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.project-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.project-item {
+  margin: auto;
+  width: 30%;
+  height: 400px;
+  background-color: #F0F0F0;
+}
+
+.project-tile {
+  margin: auto;
+  width: 30%;
+  height: 400px;
+  background-color: #F0F0F0;
+}
+
+.project-btn {
+  text-align: center;
+}
+
+.project-btn input {
+  text-align: center;
+  border-style: none;
+  background-color: #303841;
+  font-size: 18px;
+  color: #F0F0F0;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* --------DIV CONTATO--------------- */
+
+.contact {
+  display: flex;
+  background-color: #303841;
+  height: 100vh;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.contact-line {
+  margin: auto;
+  display: flex;
+}
+
+.contact-line div{
+  margin: 10px auto;
+  padding: 40px;
+
+}
+
+.contact-item a{
+  text-align: center;
+  text-decoration: none;
+  color: #F0F0F0;
+  font-size: 22px;
+}
+
+/* -------FOOTER-------------------------- */
+.red-line {
+  height: 5px;
+  background-color: #BE3144;
+}
+
+.footer-background {
+  background-color: #303841;
+}
+
+.footer-desc h3 {
+  color: #F0F0F0;
+  padding: 30px;
+  text-align: right;
+}
+
+
+/* ------MEDIA QUERY --------- */
+@media screen and (max-width: 500px) {
+/* ----DIV HEADER-------- */
+  header {
+    position: static;
+  }
+
+  .container, .container-nav {
+    width: 100%;
+  }
+
+  .header-link {
+    float: none;
+    text-align: center;
+  }
+/* -----DIV INTRO ------ */
+  .intro {
+    height: 100vh;
+    display: flex;
+  }
+
+/* --------DIV PROJECTS----- */
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-item {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+}
